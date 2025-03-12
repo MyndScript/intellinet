@@ -1,4 +1,4 @@
-const QSTB = require('../../private/core/QSTB');
+const QSTB = require('./QSTB');
 const HexGrid = require('../../private/core/HexGrid');
 
 const GitBridge = {
@@ -9,9 +9,11 @@ const GitBridge = {
             type: 'git_bridge',
             frequency: this.frequency,
             state: {
-                sites: ['myndscript.com', 'syncnificantmind.net'],
-                storage: HexGrid.initialize(),
-                public: true
+                sites: {
+                    primary: 'myndscript.com',
+                    secondary: 'syncnificantmind.net'
+                },
+                quantum: true
             }
         });
     },
