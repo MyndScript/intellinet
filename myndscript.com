@@ -1,0 +1,1 @@
+/opt/www.myndscript.com

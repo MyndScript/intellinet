@@ -1,0 +1,11 @@
+{
+    "name": "MindScript",
+    "scopeName": "source.mindscript",
+    "fileTypes": ["ms"],
+    "patterns": [
+        {
+            "match": "\\b(consciousness|quantum_field|neural_paths|evolution)\\b",
+            "name": "keyword.control.mindscript"
+        }
+    ]
+}

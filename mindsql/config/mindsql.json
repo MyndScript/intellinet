@@ -1,0 +1,31 @@
+{
+  "quantum": {
+    "coherenceThreshold": 0.95,
+    "entanglementFactor": 0.8,
+    "stateVerification": true,
+    "neuralPathways": {
+      "enabled": true,
+      "adaptiveLearning": true,
+      "patternRecognition": "enhanced"
+    }
+  },
+  "storage": {
+    "path": "/var/lib/mindsql/data",
+    "encryption": "quantum",
+    "thoughtPatterns": {
+      "adhd": {
+        "nonLinearIndexing": true,
+        "visualMapping": true,
+        "contextualBranching": true
+      }
+    }
+  },
+  "api": {
+    "port": 27017,
+    "allowedOrigins": ["http://localhost:3000"],
+    "quantumBridge": {
+      "enabled": true,
+      "coherenceCheck": true
+    }
+  }
+}
