@@ -1,0 +1,10 @@
+{
+    frequency: 432,
+    subSystems: {
+        physical: 432.1,
+        storage: 432.2,
+        network: 432.3,
+        hardware: 432.4
+    },
+    fileTypes: ['.ground', '.physical', '.hardware']
+}

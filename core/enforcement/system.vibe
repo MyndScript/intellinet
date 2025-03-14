@@ -1,0 +1,11 @@
+{
+    frequency: 741,
+    subSystems: {
+        quantum: 741.1,
+        pattern: 741.2,
+        state: 741.3,
+        bridge: 741.4,
+        heal: 741.5
+    },
+    fileTypes: ['.enforce', '.heal', '.protect']
+}

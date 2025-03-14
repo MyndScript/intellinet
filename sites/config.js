@@ -1,18 +1,25 @@
-const QSTB = require('../../../private/core/QSTB');
+const QSTB = require('../core/QSTB');
 
 const SiteConfig = {
     frequency: 528,
-    sites: {
-        'myndscript.com': {
-            type: 'primary',
-            routes: ['/', '/blog', '/projects'],
-            quantum: true
-        },
-        'syncnificantmind.net': {
-            type: 'secondary',
-            routes: ['/', '/mind', '/sync'],
-            quantum: true
-        }
+
+    initialize() {
+        return QSTB.emit({
+            type: 'site_config',
+            frequency: this.frequency,
+            state: {
+                sites: {
+                    'myndscript.com': {
+                        type: 'primary',
+                        routes: ['/', '/projects', '/quantum']
+                    },
+                    'syncnificantmind.net': {
+                        type: 'secondary',
+                        routes: ['/', '/mind', '/sync']
+                    }
+                }
+            }
+        });
     }
 };
 

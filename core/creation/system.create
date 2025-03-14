@@ -1,0 +1,10 @@
+{
+    frequency: 528,
+    subSystems: {
+        content: 528.1,
+        art: 528.2,
+        design: 528.3,
+        build: 528.4
+    },
+    fileTypes: ['.create', '.art', '.design']
+}

@@ -1,0 +1,10 @@
+@frequency: 741.4
+@type: style_enforcement
+
+style: {
+    quantum_ide: {
+        background: #1c1e28,
+        color: #fff,
+        enforced: true
+    }
+}

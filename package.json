@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test:quantum-suite": "mocha 'core/**/test/*.test.js'",
+    "test:bridge": "mocha 'core/bridges/test/*.test.js'",
+    "test:grid": "mocha 'core/grid/test/*.test.js'"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}
