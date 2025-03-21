@@ -1,0 +1,47 @@
+:root {
+    --quantum-primary: #00ffff;
+    --quantum-secondary: #0f0;
+    --quantum-dark: #000;
+    --quantum-glass: rgba(0, 255, 255, 0.1);
+}
+
+.quantum-space {
+    background: var(--quantum-dark);
+    color: var(--quantum-primary);
+    font-family: monospace;
+    margin: 0;
+    overflow: hidden;
+}
+
+.quantum-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.quantum-container {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.glass-panel {
+    background: var(--quantum-glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--quantum-primary);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+    box-shadow: 0 0 20px var(--quantum-primary);
+}
+
+.quantum-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}

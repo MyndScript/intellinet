@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hyper Reality | Quantum Social Network</title>
+    <link rel="stylesheet" href="styles/quantum.css" />
+    <link rel="stylesheet" href="styles/neural.css" />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+      #particle-network {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        color: #00ffff;
+        font-family: monospace;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body class="quantum-space">
+    <!-- Background Layers -->
+    <canvas id="particle-network" class="quantum-background"></canvas>
+    <div class="hex-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="quantum-container">
+      <!-- Welcome Section -->
+      <section class="welcome-portal">
+        <h1>Welcome to Hyper Reality</h1>
+        <div class="quantum-stats">
+          <div class="stat">Frequency: <span id="freq">963.2</span>Hz</div>
+          <div class="stat">Coherence: <span id="coherence">0.94</span></div>
+        </div>
+      </section>
+
+      <!-- Main Grid -->
+      <div class="quantum-grid">
+        <!-- QUID Login -->
+        <div class="grid-cell glass-panel">
+          <h2>Quantum Identity</h2>
+          <div class="quid-interface"></div>
+        </div>
+
+        <!-- Speed Test -->
+        <div class="grid-cell glass-panel">
+          <h2>Quantum Speed Test</h2>
+          <div class="speed-comparator">
+            <div class="test-interface"></div>
+            <div class="results-visualization"></div>
+          </div>
+        </div>
+
+        <!-- Proof of Concept -->
+        <div class="grid-cell glass-panel">
+          <h2>HexGrid Storage</h2>
+          <div class="hex-demo"></div>
+        </div>
+
+        <!-- Albany Grid -->
+        <div class="grid-cell glass-panel">
+          <h2>Albany Social Grid</h2>
+          <div class="city-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/particle-network.js"></script>
+    <script src="js/quantum-interface.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        new QuantumParticleNetwork();
+      });
+    </script>
+  </body>
+</html>
